@@ -1,0 +1,146 @@
+/* Reset básico e corpo centralizado */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f8dda6;
+}
+
+/* Container principal */
+.container-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  max-width: 900px;
+  padding: 30px 20px;
+}
+
+/* Logomarca */
+#logomarca img {
+  width: 600%;
+  max-width: 900px; /* aumenta o tamanho máximo permitido */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Título romântico */
+#titulo h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  color: #b8860b;
+  margin: 20px 0;
+}
+
+.petalas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("petalas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3; /* Transparência */
+  pointer-events: none; /* Permite clicar nos elementos abaixo */
+  z-index: 0;
+}
+
+/* Parágrafo elegante */
+#par {
+  font-size: 2em;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Rouge Script", cursive;
+  font-weight: 550;
+  font-style: normal;
+}
+
+.sp1 {
+  font-weight: 600;
+}
+.sp2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 70%;
+}
+
+/* QR Code */
+#qrcode {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Botões agrupados */
+#botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Blocos de botões */
+.botoes1,
+.botoes2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  max-width: 250px;
+}
+
+/* Texto da chave Pix */
+#textoParaCopiar {
+  font-size: 0.9rem;
+  word-break: break-word;
+  background-color: #f9f3e6;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px dashed #ccc;
+  font-family: monospace;
+}
+
+/* Botões dourados */
+.botao {
+  background: linear-gradient(to bottom, #ffd700, #daa520);
+  border: 1px solid #b8860b;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-family: "Roboto Condensed", sans-serif;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover {
+  background: linear-gradient(to bottom, #daa520, #ffd700);
+}
+
+/* Responsividade mobile */
+@media (max-width: 600px) {
+  #botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #logomarca img {
+    max-width: 200px;
+  }
+
+  #titulo h1 {
+    font-size: 1.6rem;
+  }
+}
