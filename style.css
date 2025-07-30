@@ -145,6 +145,7 @@ body {
   #botoes {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 
   #logomarca img {
